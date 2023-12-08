@@ -15,9 +15,3 @@ function retry() {
     // You can implement logic to retry or redirect the user
     window.location.reload();
 }
-
-function getMaintenanceTime() {
-    // Implement logic to get maintenance time dynamically
-    // For example, fetch it from a server or calculate based on a schedule
-    return '01:00 PM';
-}
