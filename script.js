@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     const maintenanceTime = getMaintenanceTime();
     const errorMessage = document.getElementById('error-message');
-    const maintenanceInfo = document.getElementById('maintenance-info');
 
     if (maintenanceTime) {
-        errorMessage.innerText = `Scheduled maintenance. Please check back after ${maintenanceTime}.`;
-        maintenanceInfo.innerText = `Maintenance scheduled at: ${maintenanceTime}`;
+        errorMessage.innerText = 'Scheduled maintenance. Please try again later.';
     } else {
         errorMessage.innerText = 'Error: Access Denied';
     }
