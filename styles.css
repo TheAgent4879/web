@@ -4,9 +4,6 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-image: url('background-image.jpg');
-    background-size: cover;
-    background-position: center;
     background: linear-gradient(to right, #e74c3c, #f4f4f4);
     font-family: 'Open Sans', sans-serif;
 }
@@ -22,17 +19,27 @@ body {
 
 h1 {
     color: #e74c3c;
+    font-size: 36px; /* Increased font size */
+    margin-bottom: 20px; /* Added margin */
 }
 
-a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
     font-size: 18px;
-    display: inline-block;
     margin-top: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-a:hover {
-    text-decoration: underline;
+button:hover {
+    background-color: #2980b9;
+}
+
+#maintenance-info {
+    font-size: 16px;
+    margin-top: 10px;
 }
