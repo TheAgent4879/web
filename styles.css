@@ -4,22 +4,20 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    /* Use a background image or pattern to make it visually appealing */
     background-image: url('background-image.jpg');
     background-size: cover;
     background-position: center;
-    /* Add a subtle texture or gradient for depth */
     background: linear-gradient(to right, #e74c3c, #f4f4f4);
-    font-family: 'Open Sans', sans-serif; /* Use a custom font */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .error-container {
     text-align: center;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff; /* Adjust as needed */
-    color: #333; /* Adjust text color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+    background-color: #fff;
+    color: #333;
 }
 
 h1 {
@@ -29,11 +27,11 @@ h1 {
 button {
     background-color: #3498db;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 25px; /* Adjusted padding */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Increased border radius */
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px; /* Increased font size */
     margin-top: 20px;
 }
 
@@ -42,6 +40,6 @@ button:hover {
 }
 
 #maintenance-info {
-    font-size: 14px;
+    font-size: 16px; /* Increased font size */
     margin-top: 10px;
 }
