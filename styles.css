@@ -15,7 +15,7 @@ body {
     text-align: center;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     color: #333;
 }
@@ -24,22 +24,15 @@ h1 {
     color: #e74c3c;
 }
 
-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 15px 25px; /* Adjusted padding */
-    border: none;
-    border-radius: 8px; /* Increased border radius */
-    cursor: pointer;
-    font-size: 18px; /* Increased font size */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
     margin-top: 20px;
 }
 
-button:hover {
-    background-color: #2980b9;
-}
-
-#maintenance-info {
-    font-size: 16px; /* Increased font size */
-    margin-top: 10px;
+a:hover {
+    text-decoration: underline;
 }
