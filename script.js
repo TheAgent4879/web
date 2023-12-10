@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const maintenanceTime = getMaintenanceTime();
     const errorMessage = document.getElementById('error-message');
 
     if (maintenanceTime) {
