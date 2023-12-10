@@ -22,10 +22,3 @@ function retry() {
     // You can implement logic to retry or redirect the user
     window.location.reload();
 }
-
-// Function to get maintenance time (you can implement this as per your requirements)
-function getMaintenanceTime() {
-    // Replace this with your logic to retrieve maintenance time
-    // For example, you can use localStorage or make a server request
-    return localStorage.getItem('maintenanceTime');
-}
