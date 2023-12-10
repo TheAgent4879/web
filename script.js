@@ -1,16 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const errorMessage = document.getElementById('error-message');
-    const maintenanceTime = getMaintenanceTime();
+    const cookieBanner = document.getElementById('cookieBanner');
 
-    // Check if maintenanceTime is defined
-    if (maintenanceTime !== undefined && maintenanceTime !== null) {
-        errorMessage.innerText = `Scheduled maintenance. Please check back after ${maintenanceTime}.`;
-    } else {
-        errorMessage.innerText = 'Error: Access Denied';
+    // Check if the user has already accepted cookies
+    const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+
+    if (!cookiesAccepted) {
+        // Show the cookie banner if not accepted
+        cookieBanner.style.display = 'block';
     }
-
-    // You can add more JavaScript logic here if needed
 });
+
+function acceptCookies() {
+    // Set a flag in localStorage to indicate that cookies are accepted
+    localStorage.setItem('cookiesAccepted', 'true');
+
+    // Hide the cookie banner
+    document.getElementById('cookieBanner').style.display = 'none';
+}
 
 function retry() {
     // You can implement logic to retry or redirect the user
