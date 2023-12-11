@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.error-container {
+.error-container, .privacy-container {
     text-align: center;
     padding: 50px;
     border-radius: 10px;
